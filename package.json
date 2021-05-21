@@ -1,5 +1,5 @@
 {
-  "name": "angular-web-component",
+  "name": "pega-angular-webcomponent",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
