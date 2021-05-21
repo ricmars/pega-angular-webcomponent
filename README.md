@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.1.
 
+Go to https://ricmars.github.io/pega-angular-webcomponent/ for the demo
+
 ### Project setup
 
 run `npm install`
