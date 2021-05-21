@@ -4,7 +4,7 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --output-hashing none && node scripts/fix_files.js",
+    "build": "(ng build --output-hashing none && node scripts/fix_files.js)",
     "watch": "ng build --watch --configuration development"
   },
   "private": true,
