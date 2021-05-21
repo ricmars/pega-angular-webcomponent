@@ -3,7 +3,7 @@ const replace = require('replace-in-file');
 const optionsFile1 = {
   files: './docs/index.html',
   from: /src="/g,
-  to: 'src=".\/',
+  to: 'src=".\/pega-angular-webcomponent\/',
 };
 replace(optionsFile1)
   .then((results) => {
