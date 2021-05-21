@@ -1,0 +1,29 @@
+<div *ngIf="caseID==''">
+    <h1>My worklist ({{assignments.length}})</h1>
+    <table>
+        <thead>
+        <tr>
+            <th>Name</th>
+            <th>case ID</th>
+            <th class="right-aligned">Urgency</th>
+            <th class="right-aligned">Action</th>
+        </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let assignment of assignments">
+                <td>{{assignment.name}}</td>
+                <td>{{assignment.caseID}}</td>
+                <td>{{assignment.urgency}}</td>
+                <td><button (click)="opencase(assignment.caseID)" mat-raised-button>Open</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+<div *ngIf="caseID!=''">
+    <button (click)="backtoworklist()" mat-raised-button>Back</button>
+    <h1>Case ({{caseID}})</h1>
+    <ul>
+      <li *ngFor="let key of contentCase()">{{key}}:{{caseData.content[key]}}</li>
+    </ul>
+</div>
+
